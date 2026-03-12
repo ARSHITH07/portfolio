@@ -1,3 +1,5 @@
+import avatarImage from "./assets/IMG_20260312_174309.png.jpeg";
+
 export const profile = {
   name: "Arshith Raj",
   title: "Full Stack Developer",
@@ -8,7 +10,7 @@ export const profile = {
   about:
     "Known for my quick learning ability, problem-solving mindset, and commitment to continuous improvement in both development and support roles.",
   resumeUrl: "/ARSHITH%20RESUME%20(2).pdf",
-  avatar: "/src/assets/IMG_20260312_174309.png.jpeg",
+  avatar: avatarImage,
   githubUsername: "",
   email: "arshithrajoff@gmail.com",
   phone: "8848144926",
