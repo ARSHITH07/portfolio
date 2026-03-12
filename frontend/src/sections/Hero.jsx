@@ -1,9 +1,19 @@
-import { motion, useScroll, useTransform } from "framer-motion";
+import { AnimatePresence, motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useState } from "react";
 import { profile, heroTech } from "../data.js";
 
 export default function Hero() {
   const { scrollY } = useScroll();
   const y = useTransform(scrollY, [0, 400], [0, 120]);
+  const [titleIndex, setTitleIndex] = useState(0);
+  const titles = ["Full Stack Developer", "Laravel Developer"];
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setTitleIndex((prev) => (prev + 1) % titles.length);
+    }, 2400);
+    return () => clearInterval(timer);
+  }, []);
 
   return (
     <section id="home" className="relative min-h-screen flex items-center overflow-hidden">
@@ -36,7 +46,24 @@ export default function Hero() {
             transition={{ duration: 0.7 }}
             className="text-4xl md:text-6xl font-display font-semibold text-ink-900 dark:text-white"
           >
-            {profile.title}
+            <span className="block h-[1.15em] md:h-[1.1em] overflow-hidden">
+              <AnimatePresence mode="wait">
+                <motion.span
+                  key={titles[titleIndex]}
+                  initial={{ opacity: 0, x: 40 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  exit={{ opacity: 0, x: -40 }}
+                  transition={{ duration: 0.45 }}
+                  className="block"
+                  style={{
+                    textShadow:
+                      "0 0 1px rgba(110,231,183,0.9), 0 0 6px rgba(110,231,183,0.55), 0 0 14px rgba(110,231,183,0.35)"
+                  }}
+                >
+                  {titles[titleIndex]}
+                </motion.span>
+              </AnimatePresence>
+            </span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

@@ -5,23 +5,30 @@ import { api } from "../api.js";
 
 const fallbackBlogs = [
   {
+    _id: "b0",
+    title: "MERN Stack Development",
+    excerpt: "Completed a structured MERN stack development program.",
+    image:
+      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=900&q=80"
+  },
+  {
     _id: "b1",
-    title: "Designing for clarity in 2026",
-    excerpt: "How to balance bold aesthetics with usability.",
+    title: "Advanced Cyber Security (IBM)",
+    excerpt: "Completed advanced certification focused on modern cyber defense.",
     image:
       "https://images.unsplash.com/photo-1487014679447-9f8336841d58?auto=format&fit=crop&w=900&q=80"
   },
   {
     _id: "b2",
-    title: "The modular portfolio playbook",
-    excerpt: "Reusable content systems that scale across careers.",
+    title: "Cyber Forensics",
+    excerpt: "Built foundational knowledge in digital forensics and investigation.",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80"
   },
   {
     _id: "b3",
-    title: "Crafting API-first experiences",
-    excerpt: "Why backend architecture now shapes frontend speed.",
+    title: "Data Analytics & AI (HP LIFE)",
+    excerpt: "Completed beginner AI and data analytics certifications.",
     image:
       "https://images.unsplash.com/photo-1516383740770-fbcc5ccbece0?auto=format&fit=crop&w=900&q=80"
   }
@@ -46,9 +53,9 @@ export default function Blog() {
     <section id="blog" className="section-space">
       <div className="max-w-6xl mx-auto px-6">
         <SectionTitle
-          kicker="Blog"
-          title="Insights, trends, and studio notes"
-          subtitle="Thought leadership and behind-the-scenes experiments."
+          kicker="Learning"
+          title="Certifications and learning"
+          subtitle="Industry credentials that support development and support roles."
         />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {blogs.map((post) => (
@@ -65,12 +72,6 @@ export default function Blog() {
                 <p className="mt-2 text-sm text-ink-600 dark:text-white/60">
                   {post.excerpt}
                 </p>
-                <a
-                  href={`/blog/${post._id}`}
-                  className="inline-flex mt-4 text-sm text-accent"
-                >
-                  Read more ?
-                </a>
               </div>
             </motion.div>
           ))}

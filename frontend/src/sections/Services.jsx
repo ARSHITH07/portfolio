@@ -10,8 +10,8 @@ export default function Services() {
         <div className="absolute -bottom-10 left-0 w-64 h-64 rounded-full bg-accent2/10 blur-3xl" />
         <SectionTitle
           kicker="Services"
-          title="Data services that drive decisions"
-          subtitle="Insight-focused deliverables for teams and founders."
+          title="Full-stack and support services"
+          subtitle="Full stack development plus technical support readiness."
         />
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
           {services.map((service) => (
@@ -32,9 +32,6 @@ export default function Services() {
                   <p className="mt-3 text-sm text-ink-600 dark:text-white/60 flex-1">
                     {service.description}
                   </p>
-                  <button className="mt-6 text-sm text-accent font-semibold">
-                    Learn more >
-                  </button>
                 </div>
               </div>
             </motion.div>

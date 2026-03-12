@@ -6,45 +6,37 @@ import { api } from "../api.js";
 const fallbackProjects = [
   {
     _id: "p1",
-    title: "Telecom Customer Churn Modeling",
-    description: "EDA, feature engineering, and classification modeling to identify churn drivers.",
+    title: "Task Manager",
+    description:
+      "Task management web app for employees with work assignment, video conferencing, and progress updates. Separate logins for employees and admin.",
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80",
-    stack: ["Python", "Pandas", "scikit-learn"],
-    category: "Machine Learning",
+      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    category: "MERN Stack",
     liveUrl: "#",
     githubUrl: "#"
   },
   {
     _id: "p2",
-    title: "Credit Card Fraud Detection",
-    description: "Logistic regression model with imbalance handling achieving 94% accuracy.",
+    title: "Restaurant Table Management System",
+    description:
+      "MERN app for table booking, orders, staff assignment, billing, tipping, and takeout with real-time updates for chefs and waitstaff.",
     image:
       "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=900&q=80",
-    stack: ["Python", "scikit-learn", "EDA"],
-    category: "Analytics",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    category: "MERN Stack",
     liveUrl: "#",
     githubUrl: "#"
   },
   {
     _id: "p3",
-    title: "IMDB Movie Review Classification",
-    description: "LSTM-based sentiment analysis model with 88% test accuracy.",
+    title: "Spotify Clone",
+    description:
+      "Music streaming web app with user authentication, music playback, playlists, responsive UI, and real-time controls.",
     image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80",
-    stack: ["Python", "LSTM", "NLP"],
-    category: "NLP",
-    liveUrl: "#",
-    githubUrl: "#"
-  },
-  {
-    _id: "p4",
-    title: "RapidRelief - Disaster Alert & Response System",
-    description: "Flutter app with FastAPI backend, SQLite database, and severity classification.",
-    image:
-      "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=900&q=80",
-    stack: ["Flutter", "FastAPI", "SQLite"],
-    category: "Full Stack",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=900&q=80",
+    stack: ["MongoDB", "Express.js", "React.js", "Node.js"],
+    category: "MERN Stack",
     liveUrl: "#",
     githubUrl: "#"
   }
@@ -80,8 +72,8 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-6">
         <SectionTitle
           kicker="Projects"
-          title="Selected work, tailored for impact"
-          subtitle="Filter by category and explore modular case studies."
+          title="Full Stack builds"
+          subtitle="Hands-on projects focused on real-world workflows."
         />
         <div className="flex flex-wrap gap-3 mb-8">
           {categories.map((cat) => (

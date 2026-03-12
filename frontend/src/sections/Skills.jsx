@@ -10,8 +10,7 @@ export default function Skills() {
         <div className="absolute -bottom-10 left-0 w-64 h-64 rounded-full bg-accent2/10 blur-3xl" />
         <SectionTitle
           kicker="Skills"
-          title="Data & ML toolkit"
-          subtitle="Production-ready skills spanning analytics, modeling, and storytelling."
+          title="Tech Stack Mastery"
         />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 relative z-10">
           {skills.map((skill) => (

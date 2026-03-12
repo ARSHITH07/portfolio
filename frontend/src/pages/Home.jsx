@@ -8,7 +8,6 @@ import Projects from "../sections/Projects.jsx";
 import Testimonials from "../sections/Testimonials.jsx";
 import Blog from "../sections/Blog.jsx";
 import Contact from "../sections/Contact.jsx";
-import GithubStats from "../sections/GithubStats.jsx";
 
 export default function Home() {
   return (
@@ -21,7 +20,6 @@ export default function Home() {
         <Services />
         <Projects />
         <Testimonials />
-        <GithubStats />
         <Blog />
         <Contact />
       </main>

@@ -19,9 +19,9 @@ export default function Testimonials() {
     <section id="testimonials" className="section-space">
       <div className="max-w-5xl mx-auto px-6">
         <SectionTitle
-          kicker="Testimonials"
-          title="Clients who trust the process"
-          subtitle="Feedback from teams around the world."
+          kicker="Highlights"
+          title="Experience highlights"
+          subtitle="Snapshot of recent roles and internships."
         />
         <div className="relative glass-light dark:glass rounded-3xl p-8 shadow-glass">
           <AnimatePresence mode="wait">

@@ -4,6 +4,25 @@ import { profile } from "../data.js";
 export default function GithubStats() {
   const username = profile.githubUsername;
 
+  if (!username) {
+    return (
+      <section id="github" className="section-space">
+        <div className="max-w-5xl mx-auto px-6">
+          <SectionTitle
+            kicker="GitHub"
+            title="Code profile"
+            subtitle="GitHub details can be shared on request."
+          />
+          <div className="glass-light dark:glass rounded-3xl p-8 shadow-glass">
+            <p className="text-sm text-ink-700 dark:text-white/70">
+              I am happy to share repositories and live demos during discussions.
+            </p>
+          </div>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section id="github" className="section-space">
       <div className="max-w-6xl mx-auto px-6 relative">

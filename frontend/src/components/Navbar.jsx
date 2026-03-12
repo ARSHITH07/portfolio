@@ -8,8 +8,8 @@ const navLinks = [
   { label: "Skills", href: "#skills" },
   { label: "Services", href: "#services" },
   { label: "Projects", href: "#projects" },
-  { label: "Testimonials", href: "#testimonials" },
-  { label: "Blog", href: "#blog" },
+  { label: "Highlights", href: "#testimonials" },
+  { label: "Learning", href: "#blog" },
   { label: "Contact", href: "#contact" }
 ];
 
@@ -20,12 +20,12 @@ export default function Navbar() {
     <header className="fixed top-0 inset-x-0 z-50">
       <nav className="mx-auto flex items-center justify-between px-6 py-4 max-w-6xl">
         <a href="#home" className="text-xl font-display font-semibold text-ink-900 dark:text-white">
-          <span className="relative">
-            <span className="text-accent drop-shadow-[0_0_12px_rgba(34,197,94,0.75)]">
-              Adithya G Murali
+            <span className="relative">
+              <span className="text-accent drop-shadow-[0_0_12px_rgba(34,197,94,0.75)]">
+              Arshith Raj
+              </span>
             </span>
-          </span>
-        </a>
+          </a>
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
             <a

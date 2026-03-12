@@ -30,8 +30,8 @@ export default function Contact() {
       <div className="max-w-4xl mx-auto px-6">
         <SectionTitle
           kicker="Contact"
-          title="Let's build something remarkable"
-          subtitle="Drop a message and I will respond within 24 hours."
+          title="Let’s connect"
+          subtitle="Reach out for freelance works."
         />
         <motion.form
           onSubmit={handleSubmit}
